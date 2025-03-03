@@ -11,7 +11,7 @@ from .printer import BPrinter, bprinter, bprinter_solid, bprinter_minimal, Print
 from .formatting import TextFormatter
 from .ascii_art import ASCIIArtGenerator
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 def init(
     strip: Optional[bool] = None,

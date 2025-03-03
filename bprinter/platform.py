@@ -4,6 +4,8 @@ import platform
 from contextlib import contextmanager
 from typing import Optional, Generator
 from io import StringIO
+from moonitoring import initialize_system_monitoring
+
 
 class PlatformManager:
     """Управление платформо-зависимым поведением"""
@@ -52,6 +54,8 @@ class PlatformManager:
         """
         if self._initialized and strip is None and convert is None and wrap is None:
             return
+        
+        initialize_system_monitoring()
             
         # Применяем настройки
         if strip is not None:
