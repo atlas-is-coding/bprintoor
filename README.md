@@ -1,10 +1,10 @@
-# BPrinter | Принтер
+# BPrinter | Printer
 
 [![PyPI version](https://badge.fury.io/py/bprinter.svg)](https://badge.fury.io/py/bprinter)
 [![Python](https://img.shields.io/pypi/pyversions/bprinter.svg)](https://pypi.org/project/bprinter/)
 [![License](https://img.shields.io/github/license/danilhodos/bprinter.svg)](https://github.com/danilhodos/bprinter/blob/main/LICENSE)
 
-[English](#english) | [Русский](#русский)
+[English](#english)
 
 <a name="english"></a>
 ## 🌈 BPrinter - Powerful Cross-Platform Terminal Styling Library
@@ -90,88 +90,6 @@ For detailed documentation and examples, visit our [GitHub repository](https://g
 
 ---
 
-<a name="русский"></a>
-## 🌈 BPrinter - Мощная кросс-платформенная библиотека для стилизации текста в терминале
-
-BPrinter - это многофункциональная библиотека для стилизации текста в терминале, которая работает на Windows, macOS и Linux.
-
-### 📦 Установка
-
-```bash
-pip install bprinter
-```
-
-### 🚀 Быстрый старт
-
-```python
-from bprinter import Color, Background, Style
-
-# Простое использование цветов
-print(Color.RED + "Красный текст" + Style.RESET)
-
-# Комбинирование стилей
-print(Color.BLUE + Background.WHITE + Style.BOLD + "Жирный синий текст на белом фоне" + Style.RESET)
-
-# Использование контекстного менеджера
-with Style.color('red'):
-    print("Этот текст красный")
-    print("И этот тоже")
-```
-
-### ✨ Возможности
-
-- 🎨 16 базовых цветов и 256 расширенных цветов
-- 🖌 Поддержка RGB цветов
-- ✏️ Стилизация текста (жирный, курсив, подчеркивание и др.)
-- 🔤 Генерация ASCII арта
-- �� Форматирование текста в стиле Markdown
-- 🖥 Кросс-платформенная совместимость
-- 🎯 Простой и интуитивно понятный API
-- 🛠 Расширяемая архитектура
-
-### 🎨 Продвинутое использование
-
-#### Логирование со стилями
-
-```python
-from bprinter import BPrinter
-
-bp = BPrinter(show_time=True)
-
-bp.success("Операция успешно завершена!")
-bp.error("Произошла ошибка")
-bp.warning("Внимание: Мало памяти")
-bp.info("Обработка данных...")
-bp.debug("Отладочная информация")
-```
-
-#### ASCII Арт
-
-```python
-from bprinter import ASCIIArtGenerator
-
-# Создание ASCII арта
-print(ASCIIArtGenerator.render("Привет!", color="red"))
-
-# Предпросмотр разных шрифтов
-print(ASCIIArtGenerator.preview_fonts("АБВ"))
-```
-
-#### Форматирование текста
-
-```python
-from bprinter import Printer
-
-printer = Printer(enable_formatting=True)
-
-printer("Это **жирный** и _курсивный_ текст")
-printer("Используйте `код` и {red|цветной текст}")
-```
-
-### 📚 Документация
-
-Подробная документация и примеры доступны в нашем [GitHub репозитории](https://github.com/DGaliaf/bprinter).
-
-## 📄 License | Лицензия
+## 📄 License
 
 MIT License 
